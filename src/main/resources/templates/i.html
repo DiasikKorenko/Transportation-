@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+<form id="contactForm" action="https://script.google.com/macros/s/AKfycbyy3yIBTK47yCpEN-JsdAIsRLrklj2qPjs3XGF6W-SdUy5EYX1RCPnNuNFLwDoGTO7ypw/exec" method="post">
+    <input type="text" name="fullName" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="subject" placeholder="Subject">
+    <input type="tel" name="phone" placeholder="Phone">
+    <textarea name="message" placeholder="Message" required></textarea>
+    <button type="submit">Submit</button>
+</form>
+
+
+<script src="https://script.google.com/macros/s/AKfycbyy3yIBTK47yCpEN-JsdAIsRLrklj2qPjs3XGF6W-SdUy5EYX1RCPnNuNFLwDoGTO7ypw/exec"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <!-- Подключаем файл скрипта -->
+<!--<script>
+    $(document).ready(function() {
+        $('#contactForm').submit(function(e) {
+            e.preventDefault();
+
+            var formData = $(this).serialize();
+
+            $.ajax({
+                url: 'https://script.google.com/macros/s/AKfycbx16LzCz9VAfpL2tgp2TSP2ARPNYaYo6C1bslCj7kSYkWDwLueYd7mKnavi3PgZFZJozg/exec',
+                method: 'GET', // Используйте метод GET
+                dataType: 'json',
+                data: formData,
+                success: function(response) {
+                    alert('Form submitted successfully!');
+                },
+                error: function(xhr, status, error) {
+                    alert('Error: ' + error);
+                }
+            });
+        });
+    });
+
+
+</script>-->
+</body>
+</html>

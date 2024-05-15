@@ -9,6 +9,6 @@ public class HomeController {
 
     @GetMapping("/")
     public String index() {
-        return "construction_02"; // Это имя вашего HTML-файла без расширения
+        return "index"; // Это имя вашего HTML-файла без расширения
     }
 }
